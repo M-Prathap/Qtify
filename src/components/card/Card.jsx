@@ -13,7 +13,7 @@ function Card(data) {
           <Tooltip title={`${songs.length}songs`} placement="top" arrow>
             <div className="wrapper">
               <div className="card">
-                <img src={image} alt="ima" height={230} />
+                <img src={image} alt="ima" height={230} width={160} />
                 <div className="banner">
                   <Chip
                     label={`${follows} follows`}
