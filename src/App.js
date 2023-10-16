@@ -6,8 +6,9 @@ import HeroSection from "./components/Hero-Section/Hero-Section";
 import { fetchTopAlbums } from "./api/api";
 import "./index.css";
 import "./styles.css";
+import "./components/Section/Section";
+import "./App.css";
 import Section from "./components/Section/Section";
-import styles from "./App.css";
 
 function App() {
   const [data, setData] = useState([]);
@@ -26,7 +27,7 @@ function App() {
     <div className="App">
       <NavBar />
       <HeroSection />
-      <div className={styles.sectionWrapper}>
+      <div className="sectionWrapper">
         <Section data={data} title="Top Albums" />
       </div>
     </div>
