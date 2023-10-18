@@ -1,16 +1,15 @@
-import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
+import React from "react";
 import "./Search.css";
-const SearchBar = () => {
+import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
+const Search = () => {
   return (
-    <>
-      <div className="wrapper">
-        <input className="search" />
-        <button className="search-button">
-          <SearchIcon />
-        </button>
-      </div>
-    </>
+    <form className="wrappers">
+      <input className="search" placeholder="Search a album of your choice" />
+      <button className="searchButton">
+        <SearchIcon />
+      </button>
+    </form>
   );
 };
 
-export default SearchBar;
+export default Search;
